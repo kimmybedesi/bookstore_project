@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/books_library_1768.ico" />
+
+</head>
+
+  <audio autoplay loop style="display: none;">
+  <source src="ssets/magical-library.mp3" type="audio/mpeg">
+</audio>
+
+  <div class="banner-container relative w-full flex justify-center items-center py-4 md:py-6">
+  <img src="assets/pixel-banner.png" alt="Banner" class="pixel-banner" />
+  <h1 class="absolute text-xl md:text-8xl font-bold text-[#2f1f10] drop-shadow px-4">Kimmy's Magical Library</h1>
+</div>
+
+<section class="text-center mt-2 md:mt-4">
+  <button id="load-books" class="bg-[#a10a0a] text-white font-['Press_Start_2P'] text-sm py-2 px-5 border-4 border-black shadow-md hover:bg-[#570000] transition-all duration-200">
+    ▶ Load Books
+  </button>
+  
+</section>
+
+  </header>
+
+ 
+    <section class="max-w-4xl mx-auto p-6 relative shadow-lg overflow-hidden rounded-xl text-white font-['Press_Start_2P']">
+  <img src="assets/pixel-banner.png" alt="Scroll Background"
+       class="absolute inset-0 w-full h-full z-0 pointer-events-none" />
+
+  <div class="relative z-10 text-center text-black-100 p-4">
+    <h2 class="text-2xl text-[#2f1f10] font-semibold mb-4 drop-shadow">Add a New Book</h2>
+
+    <form id="book-form" class="grid grid-cols-1 md:grid-cols-2 gap-4 text-black font-['Press_Start_2P']">
+      <input name="title" id="title" type="text" placeholder="Title" class="p-2 rounded bg-amber-100" required />
+      <input name="author" id="author" type="text" placeholder="Author" class="p-2 rounded bg-amber-100" required />
+      <input name="year" id="year" type="number" placeholder="Year" class="p-2 rounded bg-amber-100" required />
+      <input name="genre" id="genre" type="text" placeholder="Genre" class="p-2 rounded bg-amber-100" required />
+      <button type="submit" class="md:col-span-2 bg-green-800 hover:bg-green-900 font-['Press_Start_2P'] text-white py-2 px-4 rounded-full font-semibold shadow">
+        Add Book
+      </button>
+    </form>
+  </div>
+</section>
+
+<section id="books-container" class="grid gap-20 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></section>
+
+<div id="message" class="mt-6 text-center font-mono text-lg"></div>
+  <script src="app.js"></script>
+</body>
+</html>

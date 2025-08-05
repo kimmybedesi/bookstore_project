@@ -1,0 +1,63 @@
+body {
+  background-image: url('assets/mark-ichim-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+body {
+  cursor: url('assets/hover-cursor.png'), auto;
+  }
+
+button:hover,
+a:hover {
+  cursor: url('assets/auto-cursor.png'), pointer;
+}
+
+input,
+button,
+form {
+  font-family: 'Cormorant Garamond', serif;
+ }
+
+.pixel-banner {
+  width: 1500px;
+  height: 300px;
+  }
+
+.banner-container h1 {
+  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  text-size-adjust: 300%;
+}
+
+.book-card {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  margin: auto;
+  font-family: 'Great Vibes', cursive;
+}
+
+
+.book-card-image {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+.book-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+ 
+}
+
+.book-text {
+  font-family: 'Great Vibes', cursive;
+   }
+
